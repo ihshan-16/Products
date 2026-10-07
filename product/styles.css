@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+nav{
+    height: 80px;
+    background:linear-gradient(to left, white,rgb(180,78,95));
+    padding: 20px 5%;
+    color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    padding-bottom: 20px;
+}
+main{
+
+    height: 100vh;
+    background:linear-gradient(rgb(144, 210, 232),rgb(215, 141, 141),purple,pink);
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    justify-content: space-around;
+    /* align-items: center; */
+    overflow: auto;
+    padding-top: 100px;
+    scroll-behavior: smooth;
+}
+
+.card{
+    height: 400px;
+    width:300px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 4px 4px 8px black;
+    border-radius: 20px;
+    padding: 20px;
+    gap:10px;
+    background-color: aqua;
+    transition: transform 1s ease-in;
+}
+.card img{
+    height:30%;
+     transition: transform 1s ease-in;
+     background-color: black;
+
+}
+.card button{
+    background-color: yellowgreen;
+    padding: 10px;
+    border-radius:10px;
+    box-shadow: 1px 2px 3px rgb(187, 187, 42);
+     transition: transform 1s ease-in;
+}
+.card p:nth-child(2){
+    color:brown;
+}
+.card p:nth-child(3){
+    color:rgb(20, 26, 27);
+}
+.card p:nth-child(4){
+    color:goldenrod;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card button:hover{
+   background-color: greenyellow;
+   transform: scale(1.1);
+}
+.card img:hover{
+    transform: scale(1.2);
+}
